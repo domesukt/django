@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+<button type="button" onclick="location.href='{% url 'social:begin' 'twitter' %}'">Twitterでログイン</button>
+
+<hr>
+<h3>これはなにか</h3>
+社会性フィルターを実装したつぶやきをすることができるやつ<br>
+ネガティブな言葉を入力すると「にゃーん」に変換されてツイートされます<br>
+<hr>
+<h3>社会性フィルターとは</h3>
+<p>これです</p>
+<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">図です <a href="https://t.co/2OFfuLPk2l">pic.twitter.com/2OFfuLPk2l</a></p>&mdash; 4869 (@sh4869sh) <a href="https://twitter.com/sh4869sh/status/767244989503901696">2016年8月21日</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+{% endblock content %}
